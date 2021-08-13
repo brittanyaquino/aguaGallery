@@ -1,0 +1,61 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfloat {
+    clear: both;
+}
+
+#header h1{
+    text-align: center;
+    background-image: url('img/h2o.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 500px;
+    line-height: 500px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 3em;
+    text-shadow: 0 0 10px #000;
+
+}
+
+#navbar {
+    box-shadow: 0px 2px 5px #ccc;
+    margin-bottom: 20px;
+}
+
+#nav {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav a {
+    color: #363636;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    float: left;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+#nav a:hover {
+    color: #1f566a;
+    border-bottom: 2px solid #1f566a;
+}
+
+#footer {
+    background-color: #1f566a;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 20px;
+    color: #fff;
+}

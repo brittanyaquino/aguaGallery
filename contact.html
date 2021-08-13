@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+            #nav #active {
+                color: #338193;
+                border-bottom: 2px solid #338193;
+            }
+
+            #container {
+                background-color: #e7f0f1;
+                width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 50px;
+                box-shadow: 0px 5px 18px #bbbbbb;
+            }
+
+            button {
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
+
+            button:hover {
+                background-color: #338193;
+                color: #fff;
+            }
+
+            h2 {
+                margin-top: 20px 0;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                font-size: 1em;
+                font-weight: 500;
+                line-height: 1.6;
+            }
+
+            .form-item {
+                margin: 30px 0px;
+            }
+
+            .label {
+                display: block;
+                width: 250px;
+                float: left;
+            }
+
+            textarea#msg-id {
+                width: 330px;
+                height: 100px;
+            }
+
+            input#name-id{
+                width: 330px;
+            }
+            input#email-id{
+                width: 330px;
+            }
+
+            #navbar {
+                margin-bottom: 8px;
+            }
+
+            #footer {
+                margin-top: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Agua Alrededor del Mundo</h1>
+        </div>
+
+        <div id="navbar">
+            <div id="nav">
+                <a href="index.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a id="active" href="contact.html">Contact</a>
+                
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+
+        <div id="container">
+            <h2>Contact Us</h2>
+
+            <p>Feel free to contact us at <a href="mailto:info@agua.com">info@agua.com</a> if you have any questions, archive inquieries, or if you would like to send in your own images!</p>
+
+            <form action="confirmation.html">
+
+                <div class="form-item">
+                    <label class="label" for="name-id">Name:</label>
+                    <input id="name-id" type="text" placeholder="First Last">
+                </div>
+
+                <div class="form-item">
+                    <label class="label" for="email-id">Email:</label>
+                    <input id="email-id" type="email" placeholder="yourname@gmail.com">
+
+                </div>
+
+                <div class="form-item">
+                    <label class="label">Are you sending in</label>
+
+                    <label> 
+                        <input type="radio" name="option">
+                        Questions
+                    </label>
+                    <label>
+                        <input type="radio" name="option">
+                        Archive Inquieries
+                    </label>
+                    <label>
+                        <input type="radio" name="option">
+                        Your Images
+                    </label>
+                </div>
+
+                <div class="form-item">
+                    <label class="label">Subscribe:</label>
+
+                    <label>
+                        <input type="checkbox">
+                        Newsletters
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Events
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Updates
+                    </label>
+                </div>
+
+                <div class="form-item"> 
+                    <label class="label" for="la-id">Are you an LA based photographer?</label>
+                    <select id="la-id">
+                        <option>-Select-</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label class="label" for="msg-id">Message:</label>
+                    <textarea id="msg-id" placeholder="Hello..."></textarea>
+                </div>
+
+                <div class="form-item">
+                    <button id="submit-btn" type="submit">Send</button>
+                    <button type="reset">Clear All</button>
+                </div>
+
+            </form>
+        </div>
+        
+        <div id="footer">
+            AguaAlrededorDelMundo &copy;
+        </div>
+
+    </body>
+</html>

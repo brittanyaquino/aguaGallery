@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" >
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <style>
+        #nav #active {
+            color: #338193;
+            border-bottom: 2px solid #338193;
+        }
+
+        /* Styles for the gallery */
+        .gallery {
+            width: 1130;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* make the three vertical columns go next to eachother */
+        .vertical {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .vertical img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            opacity: 0.7;
+        }
+
+        .vertical img:hover {
+            opacity: 1.0;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .vertical {
+                flex: 30%;
+                max-width: 30%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .vertical {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        /* Styles for the text on the pictures */
+        .container {
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1d1d1d;
+            color: #fff;
+            font-weight: 800;
+            font-size: .8em;
+            letter-spacing: 1px;
+            padding-left: 20px;
+            padding-right: 20px;
+            opacity: 0.7;
+            border-radius: 8px;
+        }
+
+        .container .text {
+            visibility: hidden;
+        }
+
+        .container:hover .text {
+            visibility: visible;
+        }
+
+        </style>
+    </head>
+    <body>
+            <div id="header">
+                <h1>Agua Alrededor del Mundo</h1>
+            </div>
+
+            <div id="navbar">
+                <div id="nav">
+                    <a id="active" href="index.html">Gallery</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    
+                    <div class="clearfloat"></div>
+                </div>
+            </div>
+
+
+
+        <div class="gallery">
+            <div class="vertical">
+                <!-- Water + mountain -->
+                <div class="container">
+                    <img src="img/mountain5.jpeg" alt="Clouds and a lake">
+                    <div class="text">
+                        <p>Serenity</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/mountain1.jpeg" alt="Cliff overlooking a river">
+                    <div class="text">
+                        <p> Endless clouds</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/mountain2.jpeg" alt="Small waterfall">
+                    <div class="text">
+                        <p> Swaying water</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/mountain3.jpeg" alt="Calm river">
+                    <div class="text">
+                        <p> Calm river bend</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/mountain4.jpeg" alt="Large waterfall">
+                    <div class="text">
+                        <p> Beautiful waterfal</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/mountain7.jpeg" alt="River through mountains">
+                    <div class="text">
+                        <p> Rushing river</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/mountain6.jpeg" alt="Strong waterfall with a yellow jacket man">
+                    <div class="text">
+                        <p> Yellow jacket</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/tropical9.jpeg" alt="Perfect wave">
+                    <div class="text">
+                        <p> Perfect wave</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/mountain8.jpeg" alt="Beautiful waterfall">
+                    <div class="text">
+                        <p> Tranquility</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/water16.jpeg" alt="Jellyfish in the ocean">
+                    <div class="text">
+                        <p> Pretty in Pink</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="vertical">
+                <!-- Water -->
+                <div class="container">
+                    <img src="img/water1.jpeg" alt="Drop of water splashing against rock">
+                    <div class="text">
+                        <p> Bliss</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/water2.jpeg" alt="Underneath a wave">
+                    <div class="text">
+                        <p> Stillness</p>
+                    </div>  
+                </div>
+                <div class="container">
+                    <img src="img/water4.jpeg" alt="More waves">
+                    <div class="text">
+                        <p> Natural movement</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/water3.jpeg" alt="Hands receiving water">
+                    <div class="text">
+                        <p> Refresh</p>
+                    </div>  
+                </div>
+                <div class="container">
+                    <img src="img/water6.jpeg" alt="Purple wave">
+                    <div class="text">
+                        <p>Eternally purple</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/water5.jpeg" alt="Water droplets">
+                    <div class="text">
+                        <p>Ripples </p>
+                    </div>
+                    </div>
+                <div class="container">
+                    <img src="img/water13.jpeg" alt="Blue waterfalls">
+                    <div class="text">
+                        <p> Peace of mind</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/plant3.jpeg" alt="Plant with water drops">
+                    <div class="text">
+                        <p> Composure</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/plant4.jpeg" alt="Plants underwater">
+                    <div class="text">
+                        <p>Twirling underwater</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/mountain10.jpeg" alt="Small waterfall into a lake">
+                    <div class="text">
+                        <p> Stillness</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/water15.jpeg" alt="Ocean waves">
+                    <div class="text">
+                        <p> Pleasant waves</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical">
+                <!-- Water + tropical -->
+                <div class="container">
+                    <img src="img/tropical1.jpeg" alt="Private beach">
+                    <div class="text">
+                        <p> Peaceful</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/tropical4.jpeg" alt="Waves and sand">
+                    <div class="text">
+                        <p>Untouched nature</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/tropical2.jpeg" alt="Turtle swimming">
+                    <div class="text">
+                        <p> Just keep swimming</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/tropical3.jpeg" alt="Beach and palm trees">
+                    <div class="text">
+                        <p> Sunny day</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/tropical5.jpeg" alt="Clear blue sky">
+                    <div class="text">
+                        <p> Fun at the pier</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/plant2.jpeg" alt="Tiger and plants">
+                    <div class="text">
+                        <p> Tiger eyes</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/tropical6.jpeg" alt="Palm tree and sunset">
+                    <div class="text">
+                        <p> Sunset stillness</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/tropical7.jpeg" alt="Pig swimming with bird">
+                    <div class="text">
+                        <p>Odd friends</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/tropical8.jpeg" alt="Reflection of the sky on the beach">
+                    <div class="text">
+                        <p> Reflecting</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/plant5.jpeg" alt="Green leaf with water">
+                    <div class="text">
+                        <p> Burst of green</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/plant6.jpeg" alt="One water drop">
+                    <div class="text">
+                        <p>Flawless</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/plant8.jpeg" alt="Green plants with water on top">
+                    <div class="text">
+                        <p> Sublime growth</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/water14.jpeg" alt="Sunset above the waves">
+                    <div class="text">
+                        <p> Brilliant sunset</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            AguaAlrededorDelMundo &copy;
+        </div>
+        
+    </body>
+</html>
